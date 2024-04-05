@@ -56,7 +56,7 @@ function App() {
           type="text"
           id="productId"
           value={searchInput}
-          placeholder="Enter Product ID or Product Name"
+          placeholder="กรุณากรอกรหัสสินค้าหรือข้อมูลสินค้า"
           onChange={(e) => setProductId(e.target.value)}
         />
         <br />
