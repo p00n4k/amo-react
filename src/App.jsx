@@ -61,14 +61,14 @@ function App() {
         />
         <br />
         <button type="submit" className="btn" onClick={handleSearchBYID}>
-          Search by Product ID
+          ค้นหาด้วยรหัสสินค้า
         </button>
         <button
           type="submit"
           className="btn-productname"
           onClick={handleSearchBYProductName}
         >
-          Search by Product Name
+          ค้นหาด้วยข้อมูลสินค้า
         </button>
       </form>
       {error && <p>Error: {error}</p>}
