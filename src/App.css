@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.productid-head {
+  background-color: rgb(218, 179, 255);
+  border-radius: 5px;
+  padding: 5px;
+}
+.productname-head {
+  background-color: rgb(179, 218, 255);
+  border-radius: 5px;
+  padding: 5px;
+}
+.producttotal-head {
+  background-color: rgb(255, 179, 218);
+  border-radius: 5px;
+  padding: 5px;
+}
+.warehouse_id-head {
+  background-color: rgb(196, 254, 162);
+  border-radius: 5px;
+  padding: 5px;
+}
+.warehouse_name-head {
+  background-color: rgb(255, 255, 179);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.productid {
+  margin: 15px 0;
+}
+.productname {
+  margin: 15px 0;
+}
+.producttotal {
+  margin: 15px 0;
+}
+.warehouse_id {
+  margin: 20px 0;
+}
+.warehouse_name {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.btn-change {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-items: center;
+}
+
+.btn-productname {
+  background-color: #33898f;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-items: center;
+}
+
+.productname {
+  max-width: 100%; /* Adjust max-width as needed */
+  word-wrap: break-word;
+  line-height: 2;
+}
+
+hr {
+  margin: 5px 0;
+}
+
+.section-header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
