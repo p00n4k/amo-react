@@ -132,3 +132,8 @@ hr {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+.product_quantity {
+  font-weight: 900;
+  font-size: 18px;
+  color: #1100ff;
+}
