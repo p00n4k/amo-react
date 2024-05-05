@@ -137,3 +137,12 @@ hr {
   font-size: 18px;
   color: #1100ff;
 }
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px; /* Adjust height as needed */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  color: #333; /* Adjust color as needed */
+}
