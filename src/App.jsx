@@ -13,23 +13,32 @@ function App() {
     setLoading(true); // Set loading to true while fetching data
     try {
       const response = await fetch(
-        `https://damp-forest-85365-524db93b1e7f.herokuapp.com/products/search/id/${searchInput}`
+        'https://damp-forest-85365-524db93b1e7f.herokuapp.com/products/search/id_body',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ id: searchInput }), // Send id in the request body
+        }
       );
+
       if (!response.ok) {
         throw new Error('Failed to fetch product data');
       }
+
       if (response.status === 204) {
         setProductData([]);
         setError('ไม่พบสินค้ารหัสนี้ในคลัง กรุณาลองใหม่อีกครั้ง');
         setLoading(false); // Set loading to false after handling response
         return;
       }
+
       const data = await response.json();
       setProductData(data);
-      setError(null);
     } catch (error) {
       console.error('Error fetching product data:', error);
-      setProductData(null);
+      setProductData([]);
       setError(error.message);
     } finally {
       setLoading(false); // Set loading to false after handling response
@@ -87,7 +96,7 @@ function App() {
         </button>
       </form>
       {loading && <div className="loading">Loading...</div>}
-      {error && <p>Error: {error}</p>}
+      {error && <p>{error}</p>}
       {productData &&
         productData.map((product, index) => (
           <ProductDetails key={index} productData={product} />
