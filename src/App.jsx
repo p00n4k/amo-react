@@ -102,7 +102,7 @@ function App() {
         />
       ))}
 
-      <div className="pagination-container">
+      <div className="pagination-container" style={{ marginBottom: '30px' }}>
         <button
           className="pagination-button"
           disabled={page === 1}
@@ -121,6 +121,7 @@ function App() {
           Next
         </button>
       </div>
+      <div>/n</div>
     </div>
   );
 }
