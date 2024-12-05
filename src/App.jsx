@@ -106,7 +106,7 @@ function App() {
           Previous
         </button>
         <span className="page-indicator">
-          Page {page} of {totalPages}
+          Page{page}of{totalPages}
         </span>
         <button
           className="pagination-button"
