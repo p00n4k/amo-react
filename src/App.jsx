@@ -17,7 +17,8 @@ function App() {
 
     // Determine which API to call based on input
     if (idInput && productInfoInput) {
-      url = 'http://localhost:3000/products/search';
+      url =
+        'https://damp-forest-85365-524db93b1e7f.herokuapp.com/products/search';
       body = { id: idInput, name: productInfoInput };
     } else if (idInput) {
       url =
