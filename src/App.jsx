@@ -20,7 +20,7 @@ function App() {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ ...body, page, limit: 10 }), // Include pagination
+          body: JSON.stringify({ ...body, page, limit: 30 }), // Include pagination
         }
       );
 
