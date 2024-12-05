@@ -91,6 +91,7 @@ function App() {
         <button type="submit" className="btn">
           ค้นหา
         </button>
+        <div class="header">Page{page}</div>
       </form>
       {loading && <div className="loading">Loading...</div>}
       {error && <p className="error-message">{error}</p>}
@@ -98,7 +99,7 @@ function App() {
         <ProductDetails
           key={index}
           productData={product}
-          productIndex={index + 1}
+          productIndex={index + 1 + (page - 1) * 30}
         />
       ))}
 
@@ -111,7 +112,7 @@ function App() {
           Previous
         </button>
         <span className="page-indicator">
-          Page{page}of{totalPages}
+          Page {page} of {totalPages}
         </span>
         <button
           className="pagination-button"
