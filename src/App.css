@@ -146,3 +146,58 @@ hr {
   font-size: 1.2rem; /* Adjust font size as needed */
   color: #333; /* Adjust color as needed */
 }
+/* Style the container of the pagination */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Style the buttons */
+.pagination-button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+/* Hover effect for buttons */
+.pagination-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Disable button style */
+.pagination-button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style the page indicator */
+.page-indicator {
+  font-size: 16px;
+  color: #333;
+  margin: 0 10px;
+}
+
+/* Add some padding and margin to the container */
+.pagination-container {
+  padding: 10px;
+  margin: 20px 0;
+}
+/* Error message styles */
+/* App.css */
+.error-message {
+  color: red;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
