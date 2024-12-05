@@ -121,7 +121,6 @@ function App() {
           Next
         </button>
       </div>
-      <div>/n</div>
     </div>
   );
 }
