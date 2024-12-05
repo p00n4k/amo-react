@@ -13,13 +13,16 @@ function App() {
 
   const fetchData = async (body) => {
     try {
-      const response = await fetch('http://localhost:3000/products/search', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ ...body, page, limit: 10 }), // Include pagination
-      });
+      const response = await fetch(
+        'https://damp-forest-85365-524db93b1e7f.herokuapp.com/products/search',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ ...body, page, limit: 10 }), // Include pagination
+        }
+      );
 
       if (!response.ok) {
         throw new Error('Failed to fetch product data');
