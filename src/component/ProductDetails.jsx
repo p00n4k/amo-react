@@ -1,10 +1,12 @@
-import React from 'react';
-
-const ProductDetails = ({ productData }) => {
+const ProductDetails = ({ productData, productIndex }) => {
   return (
     <>
       {productData && (
         <div>
+          <p className="product-sequence">
+            <span className="circle-number">{productIndex}</span>
+          </p>
+
           <p className="productid">
             <span className="productid-head">Code:</span>{' '}
             {productData.product_stock_id}

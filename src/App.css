@@ -44,6 +44,22 @@
   border-radius: 5px;
   padding: 5px;
 }
+.product-sequence-head {
+  background-color: rgba(255, 239, 97, 0.728);
+  border-radius: 5px;
+  padding: 5px;
+}
+.circle-number {
+  display: inline-block;
+  width: 30px; /* Adjust the size of the circle */
+  height: 30px; /* Adjust the size of the circle */
+  border-radius: 50%;
+  background-color: #007bff; /* Change to any color you like */
+  color: white; /* Text color */
+  text-align: center;
+  line-height: 30px; /* Vertically center the text */
+  font-weight: bold; /* Optional: makes the number bold */
+}
 
 .productid {
   margin: 15px 0;
@@ -200,4 +216,30 @@ hr {
   border-radius: 5px;
   margin-top: 10px;
   font-weight: bold;
+}
+.loading {
+  position: fixed; /* Makes the loading message fixed on the screen */
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(-50%, -50%); /* Fine-tunes the centering */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white; /* White text color */
+  padding: 20px 30px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Font size */
+  font-weight: bold; /* Bold text */
+  z-index: 9999; /* Ensures it appears on top of other elements */
+  text-align: center; /* Centers the text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  animation: fadeIn 0.3s ease-out; /* Optional fade-in animation */
+}
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

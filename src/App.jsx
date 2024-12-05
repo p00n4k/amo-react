@@ -95,8 +95,13 @@ function App() {
       {loading && <div className="loading">Loading...</div>}
       {error && <p className="error-message">{error}</p>}
       {productData.map((product, index) => (
-        <ProductDetails key={index} productData={product} />
+        <ProductDetails
+          key={index}
+          productData={product}
+          productIndex={index + 1}
+        />
       ))}
+
       <div className="pagination-container">
         <button
           className="pagination-button"
